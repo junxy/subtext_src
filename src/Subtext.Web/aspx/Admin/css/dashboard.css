@@ -1,0 +1,248 @@
+﻿body.dashboard #main {
+    margin-left: 0;
+}
+
+body.dashboard #content 
+{
+	min-width: 680px;
+}
+
+body.dashboard #content .column {
+    padding-left: 10px;
+    float: left;
+    width: 48%;
+    padding-right: 0.5%;
+    min-width: 300px;
+}
+
+#content .column .container {
+    min-height: 300px;
+    margin: 0 5px 0 5px;
+}
+
+.section 
+{
+	line-height: 1.3;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.0em;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.section a 
+{
+	text-decoration: none;
+	font-weight: normal;
+	color: #06c;
+}
+
+.section a:hover 
+{
+	color: #f8a245;
+}
+
+.section .sub-header, .section .section-footer
+{
+	padding: 6px 0 6px 8px;
+	font-size: .9em;
+}
+
+.section-footer .info 
+{
+	float: left;
+	width: 50%;
+}
+
+.section-footer .action 
+{
+	float: right;
+	width: 200px;
+}
+
+.section .sub-header 
+{
+	font-style: italic;
+	color: #555;
+}
+
+.section .section-footer 
+{
+	font-size: 0.85em;
+}
+
+#content .section h3 {
+    padding: 5px 0 5px 8px;
+	border: 1px solid #d3d3d3;
+	border-bottom: none;
+	background: #e6e6f0 url(../images/ui-bg_glass_75_e6e6f0_1x400.png) 50% 50% repeat-x;
+	color: #555555;
+	outline: none;
+	-moz-border-radius-topleft: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-right-radius: 4px;
+	font-size: 1.0em;
+}
+
+.section ul 
+{
+    list-style-type: none;
+}
+
+#content .column fieldset legend {
+    color: #333;
+}
+
+.section .body {
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+}
+
+.section .body .table {
+    background-color: #f9f9f9;
+	margin: 0 -9px 10 -9px;
+	padding: 0 10px 0 10px;
+	border-top: solid 1px #ececec;
+	border-bottom: solid 1px #ececec;
+}
+
+.section .body table {  
+    width: 100%;
+}
+
+.section .body table th {
+    padding: 5px 5px 5px 0;
+    text-align: left;
+}
+
+
+.section .body table td {
+    padding: 5px 5px 5px 0;
+}
+
+.section .body table tr {
+    background-color: #f9f9f9;
+    border-top: solid 1px #ececec;
+}
+
+#recent-comments img.gravatar {
+    float: left;
+}
+
+#recent-comments {
+}
+
+#recent-comments ul.comments {
+    margin-bottom: 10px;
+}
+
+#recent-comments li.recent-comment {
+    clear: both;
+    border: solid 1px #fff;
+    border-bottom: solid 1px #999;
+    background-color: #fff;
+}
+
+#recent-comments li.recent-comment.alt {
+    background-color: #ffe;
+}
+
+#recent-comments {
+    clear: both;
+    padding: 0;
+}
+
+#recent-comments div.body {
+    margin: 0;  
+}
+
+.meta {
+    color: #777;
+}
+
+img.gravatar {
+    display: block;
+    clear: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+#recent-comments div.info {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    width: 85%;
+}
+
+#recent-comments .comment {
+    font-size: .8em;
+    color: #000;
+}   
+
+ul.inline {
+    margin-left: 4px;
+}
+
+ul.inline li {
+    display: inline;
+    font-size: .8em;
+}
+
+ul.inline li:before {
+    content: "| ";
+}
+
+ul.inline li:first-child:before {
+    content: "";
+}
+
+#recent-comments div.actions a {
+    font-weight: normal;
+    font-size: 1.1  em;
+}
+
+#recent-comments .footer {
+    text-align: right;
+    padding: 4px;
+}
+
+.stat, .stat a
+{
+    font-weight: bold;
+    text-align: right;
+}
+
+tr.highlight td {
+    background-color: #ffe;
+}
+
+.section-footer 
+{
+  padding-top: 8px;	
+}
+
+div.filter 
+{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.approved, .approved a
+{
+	color: #090;
+}
+
+.pending, .pending a
+{
+	color: #f60;
+}
+
+.spam, .spam a
+{
+	color: #f00;
+}

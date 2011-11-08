@@ -1,0 +1,5 @@
+subText Project - SVN Tag and Branching Guidelines
+================================================================================
+
+Please see http://code.google.com/p/subtext/wiki/BranchingStrategy?ts=1238278146&updated=BranchingStrategy
+for guidelines.

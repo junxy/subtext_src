@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16036AF0-ED24-4605-8919-90B40510BD68}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>UnitTests.Subtext</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnitTests.Subtext</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/UnitTests.Subtext/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\src\</SolutionDir>
+    <RestorePackages>false</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Documentation|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Build|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlogML, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\blogml.2.2.0\lib\BlogML.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <Name>FredCK.FCKeditorV2</Name>
+      <HintPath>..\Dependencies\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <Name>freetextbox</Name>
+      <HintPath>..\Dependencies\freetextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.2.9.2.2\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit.Framework, Version=2.4.2.355, Culture=neutral, PublicKeyToken=5e72ecd30bc408d5">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\tools\MbUnit\MbUnit.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit.Framework.2.0, Version=2.4.2.355, Culture=neutral, PublicKeyToken=5e72ecd30bc408d5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\tools\MbUnit\MbUnit.Framework.2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.2379.25601, Culture=neutral" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoEnum, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.SqlServer.SmoEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=2.6.1014.1, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll, Version=1.7.2383.20436, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="Snowball.Net, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Snowball.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>D:\dev\svn\subtext\trunk\src\Dependencies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Velocit.RegularExpressions, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Velocit.RegularExpressions.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Subtext.Extensibility\Subtext.Extensibility.csproj">
+      <Name>Subtext.Extensibility</Name>
+      <Project>{13018F20-F796-4FFE-9290-83D0E661C0A1}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Subtext.Framework\Subtext.Framework.csproj">
+      <Name>Subtext.Framework</Name>
+      <Project>{AFE766FE-5FC7-4B64-AE50-E54E9AFD77F0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Subtext.Providers.BlogEntryEditor.FCKeditor\Subtext.Providers.BlogEntryEditor.FCKeditor.csproj">
+      <Project>{C219C5FF-D4EC-4838-BACF-E3C2C6E69514}</Project>
+      <Name>Subtext.Providers.BlogEntryEditor.FCKeditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Subtext.Web\Subtext.Web.csproj">
+      <Project>{8C11B428-9C4A-46C3-B7F0-48215276BFA5}</Project>
+      <Name>Subtext.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VersionInfo.Designer.cs">
+      <Link>Properties\VersionInfo.Designer.cs</Link>
+    </Compile>
+    <Compile Include="Akismet\AkismetApiTests.cs" />
+    <Compile Include="Akismet\AkismetSpamServiceTests.cs" />
+    <Compile Include="AssemblySetUpAndCleanUp.cs" />
+    <Compile Include="BlogEntryProvider\FileBrowserConnectorTests.cs" />
+    <Compile Include="BlogMl\BlogImportServiceTests.cs" />
+    <Compile Include="BlogMl\BlogMLExportMapperTests.cs" />
+    <Compile Include="BlogMl\BlogMLImportMapperTests.cs" />
+    <Compile Include="BlogMl\BlogMLImportSetupTests.cs" />
+    <Compile Include="BlogMl\BlogMLSourceTests.cs" />
+    <Compile Include="BlogMl\BlogMLWriterTests.cs" />
+    <Compile Include="BlogMl\BlogImportRepositoryTests.cs" />
+    <Compile Include="DatabaseHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extensibility\EmailProviderInstantiationTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\ActionResults\CacheableFileResultTests.cs" />
+    <Compile Include="Framework\ActionResults\ExportActionResultTests.cs" />
+    <Compile Include="Framework\ActionResults\NotModifiedResultTests.cs" />
+    <Compile Include="Framework\ArchiveTests.cs" />
+    <Compile Include="Framework\BlogInfoTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\CollectionExtensionsTests.cs" />
+    <Compile Include="Framework\Components\ArchiveCountTests.cs" />
+    <Compile Include="Framework\Components\BlogGroupTests.cs" />
+    <Compile Include="Framework\Components\CollectionBookTests.cs" />
+    <Compile Include="Framework\Components\CommentTests\CommentSettingsTests.cs" />
+    <Compile Include="Framework\Components\CommentTests\FeedbackTests.cs" />
+    <Compile Include="Framework\Components\EnclosureTests\EnclosureGenericTests.cs" />
+    <Compile Include="Framework\Components\EnclosureTests\EnclosureInsertTests.cs" />
+    <Compile Include="Framework\Components\EnclosureTests\EnclosureUpdateTests.cs" />
+    <Compile Include="Framework\Components\EnclosureTests\EncosureDeleteTests.cs" />
+    <Compile Include="Framework\Components\EnclosureTests\MimetypeDetectionTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntryTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\FutureEntriesGetTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntryCategoryTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntryDayGetTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntriesGetTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntryTagTests.cs" />
+    <Compile Include="Framework\Components\EntryTests\EntryUpdateTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Components\EntryTests\PreviousNextTests.cs" />
+    <Compile Include="Framework\Components\EntryViewTests.cs" />
+    <Compile Include="Framework\Components\ImageTests.cs" />
+    <Compile Include="Framework\Components\KeywordTests.cs" />
+    <Compile Include="Framework\Components\LinkTests.cs" />
+    <Compile Include="Framework\Components\MetaTagTests\MetaTagDeleteTests.cs" />
+    <Compile Include="Framework\Components\MetaTagTests\MetaTagGetTests.cs" />
+    <Compile Include="Framework\Components\MetaTagTests\MetaTagInsertTests.cs" />
+    <Compile Include="Framework\Components\MetaTagTests\MetaTagIsValidTests.cs" />
+    <Compile Include="Framework\Components\MetaTagTests\MetaTagUpdateTests.cs" />
+    <Compile Include="Framework\Components\ReferrerTests.cs" />
+    <Compile Include="Framework\Components\ServerTimeZoneInfoTests.cs" />
+    <Compile Include="Framework\Components\TagTests.cs" />
+    <Compile Include="Framework\Components\TrackbackTests\TrackbackCreation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Components\ViewStatTests.cs" />
+    <Compile Include="Framework\Configuration\BlogAliasTests.cs" />
+    <Compile Include="Framework\Configuration\BlogCreationTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Configuration\BlogGroupTests.cs" />
+    <Compile Include="Framework\Configuration\ConfigTests.cs" />
+    <Compile Include="Framework\Configuration\FullTextSearchEngineSettingsTests.cs" />
+    <Compile Include="Framework\Data\CacherTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Data\DataHelperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Data\FeedbackRepositoryTests.cs" />
+    <Compile Include="Framework\Data\PagedCollectionRetrievalTests.cs" />
+    <Compile Include="Framework\Data\RepositoryExtensionsTests.cs" />
+    <Compile Include="Framework\Data\TransformerTests.cs" />
+    <Compile Include="Framework\Email\EmailServiceTests.cs" />
+    <Compile Include="Framework\Email\EmbeddedTemplateEngineTests.cs" />
+    <Compile Include="Framework\EntryTrackerTests.cs" />
+    <Compile Include="Framework\Format\UrlFormatTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\HostInfoTests.cs" />
+    <Compile Include="Framework\ImageTests.cs" />
+    <Compile Include="Framework\Infrastructure\NinjectMVC3Tests.cs" />
+    <Compile Include="Framework\Infrastructure\TimeZoneWrapperTests.cs" />
+    <Compile Include="Framework\LinksTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\ModelBinders\XmlModelBinderTests.cs" />
+    <Compile Include="Framework\NullValueTests.cs" />
+    <Compile Include="Framework\Providers\ProviderConfigurationHelperTests.cs" />
+    <Compile Include="Framework\Providers\SearchEngineTests.cs" />
+    <Compile Include="Framework\Routing\AdminUrlHelperTests.cs" />
+    <Compile Include="Framework\Routing\AggregateEnabledConstraintTests.cs" />
+    <Compile Include="Framework\Routing\DirectoryRouteHandlerTests.cs" />
+    <Compile Include="Framework\Routing\DirectoryRouteTests.cs" />
+    <Compile Include="Framework\Routing\HttpRouteHandlerTests.cs" />
+    <Compile Include="Framework\Routing\IgnoreRouteTests.cs" />
+    <Compile Include="Framework\Routing\ImageRouteTests.cs" />
+    <Compile Include="Framework\Routing\RootRouteTests.cs" />
+    <Compile Include="Framework\Routing\RouteExtensionsTests.cs" />
+    <Compile Include="Framework\Routing\RoutesTests.cs" />
+    <Compile Include="Framework\Routing\SubtextContextTests.cs" />
+    <Compile Include="Framework\Routing\SubtextPageBuilderTests.cs" />
+    <Compile Include="Framework\Routing\SubtextRouteHandlerTests.cs" />
+    <Compile Include="Framework\Routing\PageRouteTests.cs" />
+    <Compile Include="Framework\Routing\UrlHelperTests.cs" />
+    <Compile Include="Framework\Routing\VirtualPathTests.cs" />
+    <Compile Include="Framework\SecurityHandling\AccountServiceTests.cs" />
+    <Compile Include="Framework\SecurityHandling\SecurityTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Services\BlogLookupServiceTests.cs" />
+    <Compile Include="Framework\Services\CommentFilterTests.cs" />
+    <Compile Include="Framework\Services\CommentServiceTests.cs" />
+    <Compile Include="Framework\Services\CompositeTextTransformationTests.cs" />
+    <Compile Include="Framework\Services\EntryPublisherTests.cs" />
+    <Compile Include="Framework\Services\GravatarServiceTests.cs" />
+    <Compile Include="Framework\Services\Identicon\IdenticonResultTests.cs" />
+    <Compile Include="Framework\Services\Identicon\IdenticonUtilTests.cs" />
+    <Compile Include="Framework\Services\Security\AccountServiceTests.cs" />
+    <Compile Include="Framework\Services\SearchEngine\EntryExtensionMethodsTest.cs" />
+    <Compile Include="Framework\Services\SearchEngine\IndexingServiceTests.cs" />
+    <Compile Include="Framework\Services\SearchEngine\SearchEngineServiceTest.cs" />
+    <Compile Include="Framework\Services\SlugGeneratorTests.cs" />
+    <Compile Include="Framework\Services\StatisticsServiceTests.cs" />
+    <Compile Include="Framework\Services\XhtmlConverterTests.cs" />
+    <Compile Include="Framework\Skinning\ErrorUserControlTests.cs" />
+    <Compile Include="Framework\Skinning\SkinControlLoaderTests.cs" />
+    <Compile Include="Framework\Skinning\SkinEngineTests.cs" />
+    <Compile Include="Framework\Skinning\SkinScriptsTests.cs" />
+    <Compile Include="Framework\Skinning\SkinStylesTests.cs" />
+    <Compile Include="Framework\Skinning\SkinTestExtensions.cs" />
+    <Compile Include="Framework\Syndication\Admin\ModeratedCommentRssWriterTests.cs" />
+    <Compile Include="Framework\Syndication\AtomHandlerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Syndication\CommentRssHandlerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Syndication\CommentRssWriterTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Syndication\OpmlHandlerTests.cs" />
+    <Compile Include="Framework\Syndication\OpmlWriterTests.cs" />
+    <Compile Include="Framework\Syndication\RssHandlerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Syndication\RssWriterTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Syndication\SyndicationTestBase.cs" />
+    <Compile Include="Framework\TagsTests.cs" />
+    <Compile Include="Framework\Text\ConvertToAllowedHtmlTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Services\Emoticons\EmoticonsFileSourceTests.cs" />
+    <Compile Include="Framework\Services\Emoticons\EmoticonTests.cs" />
+    <Compile Include="Framework\Text\HtmlToXhtmlTransformationTests.cs" />
+    <Compile Include="Framework\Services\Emoticons\EmoticonsTransformationTests.cs" />
+    <Compile Include="Framework\Text\FormatExpressionTests.cs" />
+    <Compile Include="Framework\Text\HtmlHelperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Services\KeywordExpanderTests.cs" />
+    <Compile Include="Framework\Text\LiteralFormatTests.cs" />
+    <Compile Include="Framework\Text\RemoveHtmlTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Text\NamedFormatTests.cs" />
+    <Compile Include="Framework\Text\StringHelperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Tracking\TrackbackHandlerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Util\FileHelperTests.cs" />
+    <Compile Include="Framework\Util\GraphicsHelperTests.cs" />
+    <Compile Include="Framework\Util\KeywordsTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Util\MathHelperTests.cs" />
+    <Compile Include="Framework\Util\RequestExtensionsTests.cs" />
+    <Compile Include="Framework\Util\SerializationHelperTests.cs" />
+    <Compile Include="Framework\Util\TimeZonesTest.cs" />
+    <Compile Include="Framework\Util\TransformTests.cs" />
+    <Compile Include="Framework\Web\HttpHelperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\Web\HttpModules\AuthenticationModuleTests.cs" />
+    <Compile Include="Framework\Web\HttpModules\BlogRequestModuleTests.cs" />
+    <Compile Include="Framework\Web\HttpModules\BlogRequestTests.cs" />
+    <Compile Include="Framework\Web\HttpModules\FormToBasicAuthenticationModuleTests.cs" />
+    <Compile Include="Framework\Web\HttpModules\InstallationCheckModuleTests.cs" />
+    <Compile Include="Framework\Web\RsdHandlerTests.cs" />
+    <Compile Include="Framework\Web\SubtextPageTests.cs" />
+    <Compile Include="Framework\XmlRpc\MetaBlogApiTests.cs" />
+    <Compile Include="HttpSimulator.cs" />
+    <Compile Include="Installation\InstallationManagerTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Installation\SqlInstallationProviderTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MockExtensions.cs" />
+    <Compile Include="ReflectionHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scripting\ConnectionStringParseTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scripting\ExceptionTests.cs" />
+    <Compile Include="Scripting\ScriptCollectionTests.cs" />
+    <Compile Include="Scripting\ScriptHelperTests.cs" />
+    <Compile Include="Scripting\ScriptSplitterTests.cs" />
+    <Compile Include="Scripting\ScriptTests.cs" />
+    <Compile Include="Scripting\SqlScriptExecutionExceptionTests.cs" />
+    <Compile Include="Scripting\TemplateParameterParseTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimulatedHttpRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SimulatedRequestContext.cs" />
+    <Compile Include="SubtextWeb\Admin\AdminPageTests.cs" />
+    <Compile Include="SubtextWeb\Admin\FeedbackTests.cs" />
+    <Compile Include="SubtextWeb\Admin\PreferencesTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\AccountControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\Admin\EntryControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\ExportControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\IdenticonControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\ManifestControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\StatisticsControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controllers\CommentApiControllerTests.cs" />
+    <Compile Include="SubtextWeb\Controls\CaptchaTests.cs" />
+    <Compile Include="SubtextWeb\Controls\ControlHelperTests.cs" />
+    <Compile Include="SubtextWeb\Controls\InvisibleCaptchaTests.cs" />
+    <Compile Include="SubtextWeb\Controls\NavigationLinkTests.cs" />
+    <Compile Include="SubtextWeb\Controls\RichTextEditorTests.cs" />
+    <Compile Include="SubtextWeb\HostAdmin\HostAdminPageTests.cs" />
+    <Compile Include="SubtextWeb\Infrastructure\SubtextControllerActivatorTests.cs" />
+    <Compile Include="SubtextWeb\Providers\RichTextEditor\FCKeditorProviderTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SubtextWeb\Providers\RichTextEditor\FtbProviderTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SubtextWeb\Providers\RichTextEditor\PlainTextProviderTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SubtextWeb\Sitemap.cs" />
+    <Compile Include="SubtextWeb\SitemapHandlerTests.cs" />
+    <Compile Include="SubtextWeb\SubtextApplicationTests.cs" />
+    <Compile Include="SubtextWeb\UI\Pages\SubtextMasterPageTests.cs" />
+    <Compile Include="SubtextWeb\UI\UIHelpersTests.cs" />
+    <Compile Include="SubtextWeb\UI\ViewModels\EntryViewModelTests.cs" />
+    <Compile Include="IntegrityTests.cs" />
+    <Compile Include="TestCache.cs" />
+    <Compile Include="UnitTestEmailProvider.cs" />
+    <Compile Include="UnitTestHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Resources\Web\emoticons.txt" />
+    <None Include="App.config" />
+    <EmbeddedResource Include="Resources\Scripting\TestTemplateSqlScript.txt" />
+    <EmbeddedResource Include="Resources\Scripting\TestTemplateSqlScriptExpectedChanges.txt" />
+    <EmbeddedResource Include="Resources\Scripting\TestTemplateSqlScriptExpectedDefault.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Framework\pb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BlogMl\blank.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

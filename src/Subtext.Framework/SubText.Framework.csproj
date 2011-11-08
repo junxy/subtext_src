@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFE766FE-5FC7-4B64-AE50-E54E9AFD77F0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Subtext.Framework</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Subtext.Framework</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\src\</SolutionDir>
+    <RestorePackages>false</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Documentation|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DOCUMENTATION</DefineConstants>
+    <DocumentationFile>bin\debug\Subtext.Framework.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Build|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlogML, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\blogml.2.2.0\lib\BlogML.dll</HintPath>
+    </Reference>
+    <Reference Include="blowery.Web.HttpCompress, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\blowery.Web.HttpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.2.9.2.2\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.2379.25601, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=2.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Core, Version=1.3.20419.9005, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NuGet.Core.1.3.20419.9005\lib\net40\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll, Version=1.7.2383.20436, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="SimilarityNet, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\SimilarityNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Snowball.Net, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Snowball.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>D:\dev\svn\subtext\trunk\src\Dependencies\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Velocit.RegularExpressions">
+      <Name>Velocit.RegularExpressions</Name>
+      <HintPath>..\Dependencies\Velocit.RegularExpressions.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Subtext.Extensibility\Subtext.Extensibility.csproj">
+      <Name>Subtext.Extensibility</Name>
+      <Project>{13018F20-F796-4FFE-9290-83D0E661C0A1}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VersionInfo.Designer.cs">
+      <Link>Properties\VersionInfo.Designer.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Blog.cs" />
+    <Compile Include="CollectionExtensions.cs" />
+    <Compile Include="Collections\CollectionBook.cs" />
+    <Compile Include="Collections\ICollectionBook.cs" />
+    <Compile Include="Collections\IPagedCollection.cs" />
+    <Compile Include="CommentFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ArchiveCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\BlogStatistics.cs" />
+    <Compile Include="Components\Category.cs" />
+    <Compile Include="Components\CategoryType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\BlogGroup.cs" />
+    <Compile Include="Components\Enclosure.cs" />
+    <Compile Include="Components\Entry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\EntryDay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\EntryStatsView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\EntrySummary.cs" />
+    <Compile Include="Components\EntryView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\FeedbackExtensions.cs" />
+    <Compile Include="Components\FeedbackItem.cs" />
+    <Compile Include="Components\HostStats.cs" />
+    <Compile Include="Components\IEntryIdentity.cs" />
+    <Compile Include="Components\IIdentifiable.cs" />
+    <Compile Include="Components\Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ImageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\KeyWord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\LinkCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\MetaTag.cs" />
+    <Compile Include="Components\PagedCollection.cs" />
+    <Compile Include="Components\PageType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\PageViewType.cs" />
+    <Compile Include="Components\Referrer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ServerTimeZoneInfo.cs" />
+    <Compile Include="Components\Tag.cs" />
+    <Compile Include="Components\Trackback.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Components\ViewStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\BlogConfigurationSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationFlag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\DatabaseObjectRepository.cs" />
+    <Compile Include="Configuration\FriendlyUrlSettings.cs" />
+    <Compile Include="Configuration\FullTextSearchEngineSettings.cs" />
+    <Compile Include="Configuration\MimeTypesMapper.cs" />
+    <Compile Include="Configuration\SkinConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\Tracking.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\BlogRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Cacher.cs" />
+    <Compile Include="Data\CodeGen\StoredProcedures.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoredProcedures.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DatabaseObjectProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\EntryRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FeedbackRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HostRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LinkRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RepositoryExtensions.cs" />
+    <Compile Include="Data\SqlErrorMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\StoredProcedures.cs" />
+    <Compile Include="Data\TagRepository.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>DatabaseObjectProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Transformer.cs" />
+    <Compile Include="DateFilter.cs" />
+    <Compile Include="DateTimeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="Entries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BaseBlogConfigurationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BaseCommentException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BlogDuplicationException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BlogHiddenException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BlogImportException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BlogInactiveException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\BlogRequiresSubfolderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\CommentDuplicateException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\CommentFrequencyException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\CommentSpamException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\DeprecatedPhysicalPathsException.cs" />
+    <Compile Include="Exceptions\DuplicateEntryException.cs" />
+    <Compile Include="Exceptions\HostDataDoesNotExistException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions\InvalidSubfolderNameException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Format\UrlFormats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HostInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportExport\BlogImportService.cs" />
+    <Compile Include="ImportExport\BlogImportSetup.cs" />
+    <Compile Include="ImportExport\BlogMLExportMapper.cs" />
+    <Compile Include="ImportExport\BlogMLImportMapper.cs" />
+    <Compile Include="ImportExport\BlogImportRepository.cs" />
+    <Compile Include="ImportExport\BlogMLSource.cs" />
+    <Compile Include="ImportExport\BlogMLWriter.cs" />
+    <Compile Include="ImportExport\IBlogImportRepository.cs" />
+    <Compile Include="ImportExport\IBlogImportService.cs" />
+    <Compile Include="ImportExport\IBlogMLExportMapper.cs" />
+    <Compile Include="ImportExport\IBlogMLImportMapper.cs" />
+    <Compile Include="ImportExport\IBlogMLSource.cs" />
+    <Compile Include="ImportExport\IBlogMLWriter.cs" />
+    <Compile Include="Infrastructure\ActionResults\ExportActionResult.cs" />
+    <Compile Include="Infrastructure\Installation\IInstallationManager.cs" />
+    <Compile Include="Infrastructure\Installation\IInstaller.cs" />
+    <Compile Include="Infrastructure\Installation\InstallationManager.cs" />
+    <Compile Include="Infrastructure\Installation\InstallationScriptInfo.cs" />
+    <Compile Include="Infrastructure\Installation\InstallationState.cs" />
+    <Compile Include="Infrastructure\Installation\ScriptHelper.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\ConnectionString.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\Exceptions\SqlParseException.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\Exceptions\SqlScriptExecutionException.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\IScript.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\ITemplateScript.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\ParameterValueChangedEventArgs.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\Script.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\ScriptCollection.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\ScriptSplitter.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\SqlScriptRunner.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\TemplateParameter.cs" />
+    <Compile Include="Infrastructure\Installation\Scripting\TemplateParameterCollection.cs" />
+    <Compile Include="Infrastructure\Installation\SqlInstaller.cs" />
+    <Compile Include="Infrastructure\ITimeZone.cs" />
+    <Compile Include="Infrastructure\ModelBinders\XmlModelBinder.cs" />
+    <Compile Include="Infrastructure\Routing\AdminUrlHelper.cs" />
+    <Compile Include="Infrastructure\Routing\AggregateEnabledConstraint.cs" />
+    <Compile Include="Infrastructure\Routing\DirectoryRoute.cs" />
+    <Compile Include="Infrastructure\Routing\DirectoryRouteHandler.cs" />
+    <Compile Include="Infrastructure\Routing\HttpRouteHandler.cs" />
+    <Compile Include="Infrastructure\Routing\IDirectoryRoute.cs" />
+    <Compile Include="Infrastructure\Routing\IgnoreRoute.cs" />
+    <Compile Include="Infrastructure\Routing\ImageRoute.cs" />
+    <Compile Include="Infrastructure\Routing\IPageWithControls.cs" />
+    <Compile Include="Infrastructure\Routing\ISubtextHandler.cs" />
+    <Compile Include="Infrastructure\Routing\ISubtextPageBuilder.cs" />
+    <Compile Include="Infrastructure\Routing\PageRoute.cs" />
+    <Compile Include="Infrastructure\Routing\PageRouteHandler.cs" />
+    <Compile Include="Infrastructure\Routing\RootRoute.cs" />
+    <Compile Include="Infrastructure\Routing\RouteHandlerBase.cs" />
+    <Compile Include="Infrastructure\Routing\SubfolderRoute.cs" />
+    <Compile Include="Infrastructure\Routing\SubtextPageBuilder.cs" />
+    <Compile Include="Infrastructure\Routing\SubtextRoute.cs" />
+    <Compile Include="Infrastructure\Routing\SubtextRouteCollection.cs" />
+    <Compile Include="Infrastructure\Routing\SubtextRouteExtensions.cs" />
+    <Compile Include="Infrastructure\Routing\SystemDirectoryRoute.cs" />
+    <Compile Include="Infrastructure\Routing\UrlHelper.cs" />
+    <Compile Include="Infrastructure\Routing\VirtualPath.cs" />
+    <Compile Include="Infrastructure\Routing\XmlRpcRouteHandler.cs" />
+    <Compile Include="Infrastructure\TimeZoneWrapper.cs" />
+    <Compile Include="PostConfig.cs" />
+    <Compile Include="PostType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReflectionExtensions.cs" />
+    <Compile Include="Services\Akismet\AkismetClient.cs" />
+    <Compile Include="Services\Akismet\Comment.cs" />
+    <Compile Include="Services\Akismet\HttpClient.cs" />
+    <Compile Include="Services\Akismet\IComment.cs" />
+    <Compile Include="Services\Akismet\InvalidResponseException.cs" />
+    <Compile Include="Services\CompositeTextTransformation.cs" />
+    <Compile Include="Services\Email\EmailService.cs" />
+    <Compile Include="Services\Email\EmbeddedTemplateEngine.cs" />
+    <Compile Include="Services\Email\IEmailService.cs" />
+    <Compile Include="Services\Email\ITemplateEngine.cs" />
+    <Compile Include="Services\Email\ITextTemplate.cs" />
+    <Compile Include="Services\Email\NamedFormatTextTemplate.cs" />
+    <Compile Include="Services\Email\SystemMailProvider.cs" />
+    <Compile Include="Services\EmptyTextTransformation.cs" />
+    <Compile Include="Services\ICommentFilter.cs" />
+    <Compile Include="Images.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ActionResults\CacheableFileContentResult.cs" />
+    <Compile Include="Infrastructure\ActionResults\NotModifiedResult.cs" />
+    <Compile Include="Infrastructure\ICache.cs" />
+    <Compile Include="Infrastructure\SubtextCache.cs" />
+    <Compile Include="ISubtextContext.cs" />
+    <Compile Include="Links.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Logging\DatabaseLoggingProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Logging\Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Logging\LogEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\Logging\LoggingProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NamespaceDocumentation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NullValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\GlobalSuppressions.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Providers\ObjectProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Providers\SearchEngine.cs" />
+    <Compile Include="Providers\SearchResult.cs" />
+    <Compile Include="Services\CommentService.cs" />
+    <Compile Include="Services\EntryPublisher.cs" />
+    <Compile Include="Services\GravatarEmailFormat.cs" />
+    <Compile Include="Services\GravatarService.cs" />
+    <Compile Include="Services\ICommentService.cs" />
+    <Compile Include="Services\Identicon\IdenticonRenderer.cs" />
+    <Compile Include="Services\Identicon\IdenticonResult.cs" />
+    <Compile Include="Services\Identicon\IdenticonUtil.cs" />
+    <Compile Include="Services\IEntryPublisher.cs" />
+    <Compile Include="Services\ISlugGenerator.cs" />
+    <Compile Include="Services\IStatisticsService.cs" />
+    <Compile Include="Services\ITextTransformation.cs" />
+    <Compile Include="Services\Emoticons\Emoticon.cs" />
+    <Compile Include="Services\Emoticons\EmoticonsFileSource.cs" />
+    <Compile Include="Services\Emoticons\EmoticonsTransformation.cs" />
+    <Compile Include="Services\NuGet\PackageInstallationState.cs" />
+    <Compile Include="Services\NuGet\SubtextPackagePathResolver.cs" />
+    <Compile Include="Services\NuGet\WebProjectManager.cs" />
+    <Compile Include="Services\NuGet\WebProjectSystem.cs" />
+    <Compile Include="Services\NullSpamService.cs" />
+    <Compile Include="Services\SearchEngine\EntryExtensionMethods.cs" />
+    <Compile Include="Services\SearchEngine\IIndexingService.cs" />
+    <Compile Include="Services\SearchEngine\IndexingError.cs" />
+    <Compile Include="Services\SearchEngine\IndexingService.cs" />
+    <Compile Include="Services\SearchEngine\ISearchEngineService.cs" />
+    <Compile Include="Services\SearchEngine\NoOpIndexingService.cs" />
+    <Compile Include="Services\SearchEngine\NoOpSearchEngineService.cs" />
+    <Compile Include="Services\SearchEngine\SearchEngineEntry.cs" />
+    <Compile Include="Services\SearchEngine\SearchEngineResult.cs" />
+    <Compile Include="Services\SearchEngine\SearchEngineService.cs" />
+    <Compile Include="Services\Security\AccountService.cs" />
+    <Compile Include="Services\Security\HostAccountService.cs" />
+    <Compile Include="Services\Security\IAccountService.cs" />
+    <Compile Include="Services\Security\SecurityHelper.cs" />
+    <Compile Include="Services\SlugGenerator.cs" />
+    <Compile Include="Services\StatisticsService.cs" />
+    <Compile Include="Services\XhtmlConverter.cs" />
+    <Compile Include="Services\Emoticons\EmoticonsSource.cs" />
+    <Compile Include="Services\KeywordExpander.cs" />
+    <Compile Include="Syndication\OpmlHandler.cs" />
+    <Compile Include="Syndication\OpmlWriter.cs" />
+    <Compile Include="UI\Skinning\IContainerControl.cs" />
+    <Compile Include="UI\Skinning\IErrorControl.cs" />
+    <Compile Include="UI\Skinning\ISkinControlContainer.cs" />
+    <Compile Include="UI\Skinning\ISkinControlLoader.cs" />
+    <Compile Include="UI\Skinning\SkinControlLoader.cs" />
+    <Compile Include="UI\Skinning\SkinControlLoadException.cs" />
+    <Compile Include="UI\Skinning\SkinControlLoadResult.cs" />
+    <Compile Include="UI\Skinning\SkinEngine.cs" />
+    <Compile Include="Util\FileHelper.cs" />
+    <Compile Include="Util\GraphicsHelper.cs" />
+    <Compile Include="Util\MathHelper.cs" />
+    <Compile Include="Util\RequestExtensions.cs" />
+    <Compile Include="Util\ResourceHelper.cs" />
+    <Compile Include="Util\ThreadHelper.cs" />
+    <Compile Include="Web\Handlers\BaseHttpHandler.cs" />
+    <Compile Include="Web\Handlers\SubtextHttpHandler.cs" />
+    <Compile Include="Web\Handlers\SubtextDependencies.cs" />
+    <Compile Include="Web\SubtextPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\AkismetSpamService.cs" />
+    <Compile Include="Services\BlogLookupResult.cs" />
+    <Compile Include="Services\BlogLookupService.cs" />
+    <Compile Include="Services\BrowserDetectionService.cs" />
+    <Compile Include="Services\BrowserInfo.cs" />
+    <Compile Include="Services\IBlogLookupService.cs" />
+    <Compile Include="Services\IFeedbackSpamService.cs" />
+    <Compile Include="SubtextContext.cs" />
+    <Compile Include="Syndication\Admin\LogRssWriter.cs" />
+    <Compile Include="Syndication\Admin\RssAdminHandler.cs" />
+    <Compile Include="Syndication\Admin\ReferrerRssWriter.cs" />
+    <Compile Include="Syndication\Admin\ModeratedCommentRssWriter.cs" />
+    <Compile Include="Syndication\AtomHandler.cs" />
+    <Compile Include="Syndication\AtomWriter.cs" />
+    <Compile Include="Syndication\BaseAtomWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\BaseRssWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\BaseSyndicationHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\BaseSyndicationWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\BaseSyndicationWriterGeneric.cs" />
+    <Compile Include="Syndication\CachedFeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\CategoryWriter.cs" />
+    <Compile Include="Syndication\CommentRssWriter.cs" />
+    <Compile Include="Syndication\Compression\SyndicationCompressionFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\Compression\SyndicationCompressionHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\Compression\SyndicationCompressionSectionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\Compression\SyndicationCompressionSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Syndication\GenericRssWriter.cs" />
+    <Compile Include="Syndication\EntryCollectionHandler.cs" />
+    <Compile Include="Syndication\RssCategoryHandler.cs" />
+    <Compile Include="Syndication\RssCommentHandler.cs" />
+    <Compile Include="Syndication\RssHandler.cs" />
+    <Compile Include="Syndication\RssImageElement.cs" />
+    <Compile Include="Syndication\RssTagHandler.cs" />
+    <Compile Include="Syndication\RssWriter.cs" />
+    <Compile Include="Tags.cs" />
+    <Compile Include="Text\FormatExpression.cs" />
+    <Compile Include="Text\HtmlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\ITextExpression.cs" />
+    <Compile Include="Text\LiteralFormat.cs" />
+    <Compile Include="Text\StringHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\CommunityCreditNotification.cs" />
+    <Compile Include="Tracking\CommunityCreditNotificationException.cs" />
+    <Compile Include="Tracking\Notification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\Notifier.cs" />
+    <Compile Include="Tracking\PingBackNotificatinProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tracking\PingBackService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\SourceVerificationEventArgs.cs" />
+    <Compile Include="Tracking\TrackBackHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\TrackBackNotificationProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\TrackbackResponseCode.cs" />
+    <Compile Include="Tracking\TrackHelpers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\TrackingUrls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\Verifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\WeblogsNotificatinProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Skinning\CacheKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Skinning\Script.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Skinning\ScriptElementCollectionRenderer.cs" />
+    <Compile Include="UI\Skinning\SkinTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Skinning\Style.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Skinning\StyleDefinition.cs" />
+    <Compile Include="UI\Skinning\StyleSheetElementCollectionRenderer.cs" />
+    <Compile Include="Util\SerializationHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Statistics.cs" />
+    <Compile Include="Util\TimeZones.cs" />
+    <Compile Include="Util\Transform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\XmlSerializerSectionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VersionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlogAlias.cs" />
+    <Compile Include="Web References\com.community-credit.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Handlers\CssHandler.cs" />
+    <Compile Include="Web\Handlers\JsHandler.cs" />
+    <Compile Include="Web\Handlers\RsdHandler.cs" />
+    <Compile Include="Web\HttpHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\HttpModules\AuthenticationModule.cs" />
+    <Compile Include="Web\HttpModules\FormToBasicAuthenticationModule.cs" />
+    <Compile Include="Web\HttpModules\BlogRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\HttpModules\BlogRequestModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\HttpModules\CompressionModule.cs" />
+    <Compile Include="Web\HttpModules\InstallationCheckModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web\HttpModules\RequestLocation.cs" />
+    <Compile Include="XmlRpc\BlogInfo.cs" />
+    <Compile Include="XmlRpc\Category.cs" />
+    <Compile Include="XmlRpc\CategoryInfo.cs" />
+    <Compile Include="XmlRpc\Enclosure.cs" />
+    <Compile Include="XmlRpc\IMetaWeblog.cs" />
+    <Compile Include="XmlRpc\IWordPressAPI.cs" />
+    <Compile Include="XmlRpc\mediaObject.cs" />
+    <Compile Include="XmlRpc\mediaObjectInfo.cs" />
+    <Compile Include="XmlRpc\MetaWeblog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlRpc\MetaWeblogExtensions.cs" />
+    <Compile Include="XmlRpc\Post.cs" />
+    <Compile Include="XmlRpc\Source.cs" />
+    <Compile Include="XmlRpc\SubtextXmlRpcService.cs" />
+    <Content Include="Infrastructure\Installation\Scripting\Subtext.Scripting.csproj" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\WelcomePost.htm" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\WelcomeComment.htm" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\WelcomeArticle.htm" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.02.06.00.sql" />
+    <Content Include="license.txt" />
+    <Content Include="Infrastructure\Logging\LoggingConfigurationExample.xml" />
+    <EmbeddedResource Include="Util\TimeZones.txt" />
+    <None Include="Data\CodeGen\StoredProcedures.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>StoredProcedures.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\ImportDotText095.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.00.00.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.05.00.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.00.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.02.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.03.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.04.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.05.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.01.09.06.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.02.00.00.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\Installation.02.02.00.sql" />
+    <EmbeddedResource Include="Infrastructure\Installation\Scripts\StoredProcedures.sql" />
+    <EmbeddedResource Include="Services\Email\Templates\CommentReceived.template" />
+    <None Include="packages.config" />
+    <None Include="Web References\com.community-credit.www\affiliateservices.disco" />
+    <None Include="app.config" />
+    <None Include="Data\CodeGen\_Settings.tt" />
+    <None Include="Data\CodeGen\_Utility.tt" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.community-credit.www\affiliateservices.wsdl" />
+    <None Include="Web References\com.community-credit.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking\PingBackNotificatinProxy.resx">
+      <DependentUpon>PingBackNotificatinProxy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking\WeblogsNotificatinProxy.resx">
+      <DependentUpon>WeblogsNotificatinProxy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.community-credit.com/services/affiliateservices.asmx%3fop=AddCommunityCredit">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.community-credit.www\</RelPath>
+      <UpdateFromURL>http://www.community-credit.com/services/affiliateservices.asmx%3fop=AddCommunityCredit</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Subtext_Framework_com_community_credit_www_AffiliateServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
